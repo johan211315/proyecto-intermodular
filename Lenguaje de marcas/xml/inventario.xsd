@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+    <xs:simpleType name="tipoEstado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Activo"/>
+            <xs:enumeration value="Inactivo"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoIP">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]{1,3}\.){3}[0-9]{1,3}|None"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tipoCategoria">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Servidor"/>
+            <xs:enumeration value="Router"/>
+            <xs:enumeration value="Switch Core L3"/>
+            <xs:enumeration value="Switch Distribucion"/>
+            <xs:enumeration value="Switch Acceso"/>
+            <xs:enumeration value="Punto de acceso"/>
+            <xs:enumeration value="Impresora"/>
+            <xs:enumeration value="UPS"/>
+        </xs:restriction>
+    </xs:simpleType>
+
     <xs:element name="inventario">
         <xs:complexType>
             <xs:sequence>
@@ -8,12 +34,13 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="sistema_operativo" type="xs:string"/>
-                            <xs:element name="ip" type="xs:string"/>
+                            <xs:element name="ip" type="tipoIP"/>
                             <xs:element name="rol" type="xs:string"/>
-                            <xs:element name="estado" type="xs:string"/>
+                            <xs:element name="estado" type="tipoEstado"/>
                         </xs:sequence>
+                        
                         <xs:attribute name="id" type="xs:string" use="required"/>
-                        <xs:attribute name="categoria" type="xs:string" use="required"/>
+                        <xs:attribute name="categoria" type="tipoCategoria" use="required"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
