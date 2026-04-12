@@ -154,7 +154,31 @@
 
     <!-- ESTOS SON LOS EQUIPOS DE PRUEBA, NO DEBEN CONSIDERARSE EN EL INVENTARIO REAL -->
 
-  
+   <equipo id="SRV-ERROR-01">
+        <sistema_operativo>Ubuntu Server Linux</sistema_operativo>
+        <ip>192.168.0.99</ip>
+        <rol>Servidor de Pruebas</rol>
+        <estado>Inactivo</estado>
+    </equipo>
+
+    <equipo id="SRV-ERROR-02" categoria="Servidor">
+        <ip>192.168.0.100</ip>
+        <rol>Servidor Roto</rol>
+        <estado>Inactivo</estado>
+    </equipo>
+
+    <equipo id="IP_servidor_incorrecta" categoria="Servidor">
+        <ip>192.257.300</ip>
+        <rol>Servidor Roto</rol>
+        <estado>Inactivo</estado>
+    </equipo>
+
+    <equipo id="NO_cumple_validacion" categoria="Servidor">
+        <ip>192.168.0.15</ip>
+        <rol>Servidor Roto</rol>
+        <estado>aceptable</estado>
+    </equipo>
+
 
 
 </inventario>
