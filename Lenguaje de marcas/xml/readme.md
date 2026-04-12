@@ -42,4 +42,17 @@ El archivo XML tiene lo siguiente: <?xml-stylesheet type="text/xsl" href="invent
 La creacion del XML encaja perfectamente a la hora de implementarlo como **"formato de configuracion, intercambio y reporte"**, aplicado a la gestión del inventario de hardware de red.
 Esto es una ayuda muy grande para el despartamento de IT para mantener la infraestructura documentada y controlada de forma dinámica. 
 
+### 🎯 El Caso de Uso
+En una la infraestructura de red empresarial (servidores Linux/Windows, switches Cisco/TP-Link, routers y puntos de acceso), es vital tener un inventario actualizado. En lugar de usar documentos estáticos de texto, se genera automaticamente un inventario de los dispositivos de red en formato estructurado a partir del programas como netbox o lansweeper.
+
+### 🔄 El Flujo Técnico Implementado
+
+1. **Extracción y Almacenamiento**
+   Los datos del hardware (ID, categoría, sistema operativo, IP de gestión, rol y estado) se exportan y estructuran en el documento `inventario.xml`. Este archivo es fácil de interpretar por cualquier máquina o software de monitorización.
+
+2. **Validación Estricta**
+   Para garantizar que el inventario no contiene errores humanos antes de publicarse, el archivo se valida con el archivo `inventario.xsd`. Este archivo obliga, por ejemplo, a que todo nodo tenga asignada una categoría obligatoria, una dirección IP de gestión válida, un estado previamente enumerado, rechazando automáticamente registros incorrectos o incompletos.
+
+3. **Transformación y Visualización**
+   Para que los administradores de sistemas y auditores externos puedan consultar la topología de la red de un vistazo, se aplica la hoja de fromato de estilos `inventario.xsl`. Este script convierte los datos del XML en una tabla HTML interactiva y formateada, con etiquetas visuales por tipo de dispositivo, está pensado para publicarse en un servidor web interno sin necesidad de escribir código HTML manualmente.
 
