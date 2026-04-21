@@ -1,4 +1,4 @@
-# 🚀 Proyecto Intermodular: Infraestructura PROMETEO - Editorial ArticWolves
+# 🚀 Proyecto Intermodular: Infraestructura - Editorial ArticWolves
 
 Este repositorio contiene la documentación y detalles técnicos de la infraestructura de red diseñada para una editorial de 60 empleados. El proyecto combina entornos **Windows** y **Linux** para ofrecer una solución robusta, escalable y segura.
 
@@ -41,13 +41,7 @@ La implantación se ha realizado de forma **manual** mediante el uso de imágene
 
 ---
 
-## 📸 Capturas de Pantalla
-*(Sugerencia: Sube tus imágenes a una carpeta llamada `img` en este repositorio y enlázalas aquí)*
 
-Ejemplo:
-`![Instalación Windows Server](./img/instalacion_srv_core.png)`
-
----
 
 **Autor:** Johan Mauricio Aricapa Velasco  
 **Curso:** Proyecto Intermodular - Sistemas Operativos
