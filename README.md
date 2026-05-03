@@ -62,4 +62,5 @@ El mantenimiento y protección de los datos se realiza sin intervención humana:
 **Johan Mauricio Aricapa**  
 *Administrador de Sistemas Informáticos en Red (ASIR)*  
 📍 Barcelona | ✉️ Johanaricapa@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/johan-aricapa2113/) | 💻 [GitHub](https://github.com/johan211315)
+🔗 [LinkedIn](https://www.linkedin.com/in/johan-aricapa2113/) | 💻 [GitHub](https://github.com/johan211315) |
+*Pagina Web* https://johan211315.github.io/Proyecto/
