@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./inventario.xsl"?>
+<?xml-stylesheet type="text/css" href="./style.css"?>
+
+<inventario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./inventario.xsd">
+    
+    <equipo id="SRV-WEB" categoria="Servidor">
+        <sistema_operativo>Ubuntu Server Linux</sistema_operativo>
+        <ip>192.168.0.195</ip>
+        <rol>Servidor Frontend Web y Scripts (Cron)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SRV-BBDD" categoria="Servidor">
+        <sistema_operativo>Debian Linux</sistema_operativo>
+        <ip>192.168.0.196</ip>
+        <rol>Motor MariaDB (Ventas y Autores)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SRV-WINDOWS" categoria="Servidor">
+        <sistema_operativo>Windows Server 2022</sistema_operativo>
+        <ip>192.168.0.194</ip>
+        <rol>Active Directory, DNS y Backups</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="RTR-PRINCIPAL" categoria="Router">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>192.168.0.206</ip>
+        <rol>Puerta de enlace, NAT y Firewall (ACLs)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-CORE-01" categoria="Switch Core L3">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>192.168.0.1</ip>
+        <rol>Enrutamiento Inter-VLAN y Agregación</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-DIST-01" categoria="Switch Distribucion">
+        <sistema_operativo>TP-LINK</sistema_operativo>
+        <ip>192.168.0.10</ip>
+        <rol>Enrutamiento Inter-VLAN y Agregación</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-DIST-02" categoria="Switch Distribucion">
+        <sistema_operativo>TP-LINK</sistema_operativo>
+        <ip>192.168.0.20</ip>
+        <rol>Enrutamiento Inter-VLAN y Agregación</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-DIST-03" categoria="Switch Distribucion">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>192.168.0.30</ip>
+        <rol>Enrutamiento Inter-VLAN y Agregación</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-ACC-ALMACEN" categoria="Switch Acceso">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>None</ip>
+        <rol>Acceso de usuarios finales (PoE habilitado)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-ACC-RECEPCION" categoria="Switch Acceso">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>None</ip>
+        <rol>Acceso de usuarios finales (PoE habilitado)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-ACC-FINANZAS" categoria="Switch Acceso">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>None</ip>
+        <rol>Acceso de usuarios finales (PoE habilitado)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-ACC-MARKETING" categoria="Switch Acceso">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>None</ip>
+        <rol>Acceso de usuarios finales (PoE habilitado)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-ACC-IT" categoria="Switch Acceso">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>None</ip>
+        <rol>Acceso de usuarios finales (PoE habilitado)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="SW-ACC-RRHH" categoria="Switch Acceso">
+        <sistema_operativo>Cisco IOS</sistema_operativo>
+        <ip>None</ip>
+        <rol>Acceso de usuarios finales (PoE habilitado)</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="AP-PISO-01" categoria="Punto de acceso">
+        <sistema_operativo>None</sistema_operativo>
+        <ip>None</ip>
+        <rol>Amplificador de señal wifi</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="AP-PISO-02" categoria="Punto de acceso">
+        <sistema_operativo>None</sistema_operativo>
+        <ip>None</ip>
+        <rol>Amplificador de señal wifi</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="AP-PISO-03" categoria="Punto de acceso">
+        <sistema_operativo>None</sistema_operativo>
+        <ip>None</ip>
+        <rol>Ampilficador de señal wifi</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+     <equipo id="PRINTER-01" categoria="Impresora">
+        <sistema_operativo>None</sistema_operativo>
+        <ip>192.168.0.62</ip>
+        <rol>Impresora en red del piso 1</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="PRINTER-02" categoria="Impresora">
+        <sistema_operativo>None</sistema_operativo>
+        <ip>192.168.0.190</ip>
+        <rol>Impresora en red del piso 2</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="PRINTER-03" categoria="Impresora">
+        <sistema_operativo>None</sistema_operativo>
+        <ip>192.168.0.126</ip>
+        <rol>Impresora en red del piso 3</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+    <equipo id="UPS-Servidores" categoria="UPS">
+        <sistema_operativo>None</sistema_operativo>
+        <ip>None</ip>
+        <rol>Sistema de alimentacion ininterrumpida</rol>
+        <estado>Activo</estado>
+    </equipo>
+
+
+    
+
+</inventario>

@@ -1,0 +1,68 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #e5eef5;
+  color: #1a2530;
+  padding: 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #0d6efd;
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #1a2530;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f1f7fd;
+}
+
+/* Etiquetas de colores para las categorías */
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: white;
+}
+.tag-Servidor {
+  background-color: #2980b9;
+}
+.tag-Router {
+  background-color: #e67e22;
+}
+.tag-Switch {
+  background-color: #27ae60;
+}
+.tag-punto {
+  background-color: #fd6500;
+}
+.tag-impresora {
+  background-color: #fd3535;
+}
+.tag-ups {
+  background-color: #fd00b1;
+}
